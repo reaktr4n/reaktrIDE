@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/ride">
+        <file>assets/mesgs/reaktrIDE.ico</file>
+        <file>assets/mesgs/reaktrIDE.png</file>
+        <file>assets/mesgs/reaktrIDE.svg</file>
+        <file>assets/mesgs/reaktrIDE_32x13.png</file>
+        <file>assets/mesgs/reaktrIDE_76x30.png</file>
+        <file>assets/mesgs/reaktrIDE_171x109.png</file>
+        <file>assets/mesgs/MatLunix.svg</file>
+        <file>assets/mesgs/MatLunix_result.png</file>
+        <file>assets/mesgs/MatLunix_255x72.png</file>
+        <file>assets/mesgs/github.png</file>
+        <file>assets/mesgs/github_131x76.png</file>
+        <file>assets/general/rIDE_icon.png</file>
+        <file>assets/general/reaktrIDE.png</file>
+        <file>assets/general/reaktrIDE.svg</file>
+    </qresource>
+</RCC>

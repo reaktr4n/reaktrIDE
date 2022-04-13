@@ -1,0 +1,23 @@
+DONE: 1. close only the secondary windows
+DONE: 2. open one instance of a secondary window
+DONE: 3. display directory tree in the text view
+DONE: 4. display the project name in the Source Tree view
+DONE: 5. double click on the source tree to open the file in the code editor
+TODO: 6. custom entry when right clicked on labels/menu
+DONE: 7. add entry into the combobox and open the buffer in the code editor window.
+TODO: 8. add try and catch for some of the button/choosing methods
+TODO: 9. persist the dir structure in the tree view, when an existing directory structure is displayed, and retained when open project direct option is cancelled
+TODO: 10. the default workspace should be obtained from the rIDE solution file
+DONE: 11. clicking on a combobox item should open the file in the code editor
+TODO: 12. write contextual error messages
+TODO: 13. overlay line numbers and include toggle options
+TODO: 14. syntax highlighting C,C++ and Python
+DROP: 15. complete scripting - boilerplate and templates
+DONE: 16. display line number and column number in the status bar
+TODO: 17. populate the choices from all the checkboxes in C project creation
+	TODO: 17.1. once the project structure is created, load it in the tree view
+TODO: 18. write try-catch statements in each of the new project creation UI and methods (6/25 done)
+TODO: 19. begin fix this: 1. Fix the slashes issue - void rIDE_new_c_project::on_rIDE_new_c_project_browse_btn_clicked()
+TODO: 20. remove repeated entries in the open files combobox
+TODO: 21. include the file reading functions from default file
+TODO: 22. convert the QString to const char* for tr () function

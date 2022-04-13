@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>rIDE_new_c_project</class>
+ <widget class="QDialog" name="rIDE_new_c_project">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>623</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>623</width>
+    <height>318</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>623</width>
+    <height>318</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Source Code Pro Medium</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>[reaktrIDE] New C Project</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QGroupBox" name="rIDE_new_c_project_extras_group">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>142</y>
+     <width>200</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Include extras</string>
+   </property>
+   <widget class="QCheckBox" name="rIDE_include_cmake_file_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>24</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Include a CMakeLists.txt file in your project</string>
+    </property>
+    <property name="text">
+     <string>Include CMakeLists.txt</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="rIDE_include_readme_file_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>64</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Include a readme markdown file in your project</string>
+    </property>
+    <property name="text">
+     <string>Include README.md</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="rIDE_include_todo_file_checkbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>104</y>
+      <width>171</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Include a TODO list file in your project</string>
+    </property>
+    <property name="text">
+     <string>Include .todo file</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLineEdit" name="rIDE_new_c_project_name_line_edit">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>20</y>
+     <width>400</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="rIDE_new_c_project_directory_line_edit">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>80</y>
+     <width>400</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="rIDE_new_c_project_create_empty_project_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>142</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Create an empty project with bare minimum source files</string>
+   </property>
+   <property name="text">
+    <string>Create empty project</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rIDE_new_c_project_browse_btn">
+   <property name="geometry">
+    <rect>
+     <x>563</x>
+     <y>80</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Browse for a location on disk to create your project</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="rIDE_new_c_project_express_project_setup_checkbox">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>50</y>
+     <width>171</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Check to create a project with the provided project name with .todo, README.md and CMakeLists.txt files along with the required source code files.</string>
+   </property>
+   <property name="text">
+    <string>Express project setup</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rIDE_new_c_project_name_lbl">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>121</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>121</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Project Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rIDE_new_c_project_path_lbl">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>121</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>121</width>
+     <height>21</height>
+    </size>
+   </property>
+   <property name="text">
+    <string>Path:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rIDE_new_c_project_create_project_btn">
+   <property name="geometry">
+    <rect>
+     <x>446</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Create C Project</string>
+   </property>
+   <property name="text">
+    <string>Create</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="rIDE_new_c_project_cancel_btn">
+   <property name="geometry">
+    <rect>
+     <x>537</x>
+     <y>280</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>Cancel and quit this dialog</string>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rIDE_new_c_project_project_name_warning_lbl">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>50</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>&lt;...&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="rIDE_new_c_project_workspace_warning_lbl">
+   <property name="geometry">
+    <rect>
+     <x>156</x>
+     <y>110</y>
+     <width>251</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;...&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>rIDE_new_c_project_name_line_edit</tabstop>
+  <tabstop>rIDE_new_c_project_express_project_setup_checkbox</tabstop>
+  <tabstop>rIDE_new_c_project_browse_btn</tabstop>
+  <tabstop>rIDE_new_c_project_create_empty_project_checkbox</tabstop>
+  <tabstop>rIDE_include_cmake_file_checkbox</tabstop>
+  <tabstop>rIDE_include_readme_file_checkbox</tabstop>
+  <tabstop>rIDE_include_todo_file_checkbox</tabstop>
+  <tabstop>rIDE_new_c_project_create_project_btn</tabstop>
+  <tabstop>rIDE_new_c_project_cancel_btn</tabstop>
+  <tabstop>rIDE_new_c_project_directory_line_edit</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

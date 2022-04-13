@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>reaktrIDE</class>
+ <widget class="QMainWindow" name="reaktrIDE">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1094</width>
+    <height>639</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>reaktrIDE</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <selectedon>:/ride/assets/general/reaktrIDE.png</selectedon>
+   </iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>48</width>
+    <height>48</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="rIDE_main_container_vbox">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="rIDE_main_source_code_symbol_view_hbox">
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="rIDE_main_source_tree_lbl_tree_vbox">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="rIDE_main_source_tree_lbl">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Source Code Pro Black</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>Right click for more Source Tree options</string>
+            </property>
+            <property name="text">
+             <string>Source Tree</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTreeView" name="rIDE_main_source_tree_vw">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="rIDE_main_source_tree_sep_code_editor">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>1</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="rIDE_main_code_editor_lbl_editor">
+          <item>
+           <widget class="QLabel" name="rIDE_main_code_editor_lbl">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Source Code Pro Black</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>reaktrIDE Editor</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="rIDE_main_open_buffers_cb">
+            <property name="font">
+             <font>
+              <family>Source Code Pro Light</family>
+             </font>
+            </property>
+            <property name="toolTip">
+             <string>LIst all the open buffers in the project</string>
+            </property>
+            <property name="currentText">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPlainTextEdit" name="rIDE_main_code_editor"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="rIDE_main_code_editor_sep_symbol_tree">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>1</width>
+            <height>1</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="rIDE_main_symbol_tree_lbl_tree_vbox">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="rIDE_main_symbol_tree_lbl">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>Source Code Pro Black</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Symbol Tree</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QListView" name="rIDE_main_symbol_list_vw">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>15</width>
+              <height>0</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="rIDE_main_hbox_sep_vbox">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>1</width>
+          <height>1</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QTabWidget" name="rIDE_main_debugger_view_tabgroup">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Source Code Pro Black</family>
+          <pointsize>9</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="rIDE_main_compile_view_tab">
+         <attribute name="title">
+          <string>Compile View</string>
+         </attribute>
+         <widget class="QWidget" name="horizontalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1071</width>
+            <height>194</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="rIDE_main_compile_tab_hbox">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item>
+            <spacer name="rIDE_sep_l">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>1</width>
+               <height>1</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="rIDE_spe_r">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>1</width>
+               <height>1</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="rIDE_main_debug_view_tab">
+         <attribute name="title">
+          <string>Debug View</string>
+         </attribute>
+        </widget>
+        <widget class="QWidget" name="rIDE_main_issues_tab">
+         <attribute name="title">
+          <string>Issues View</string>
+         </attribute>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="rIDE_menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1094</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="rIDE_menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="rIDE_menuNew">
+     <property name="font">
+      <font>
+       <family>Source Code Pro</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>New</string>
+     </property>
+     <widget class="QMenu" name="rIDE_sub_menuProject">
+      <property name="title">
+       <string>Project</string>
+      </property>
+      <addaction name="rIDE_actionC"/>
+      <addaction name="rIDE_actionCPP"/>
+      <addaction name="rIDE_actionPython"/>
+     </widget>
+     <widget class="QMenu" name="rIDE_new_menuFile">
+      <property name="font">
+       <font>
+        <family>Source Code Pro Medium</family>
+        <pointsize>9</pointsize>
+       </font>
+      </property>
+      <property name="title">
+       <string>File</string>
+      </property>
+      <addaction name="rIDE_mf_actionC"/>
+      <addaction name="rIDE_mf_actionCPP"/>
+      <addaction name="rIDE_mf_actionPython"/>
+     </widget>
+     <addaction name="rIDE_sub_menuProject"/>
+     <addaction name="rIDE_new_menuFile"/>
+    </widget>
+    <widget class="QMenu" name="rIDE_menuAdd">
+     <property name="font">
+      <font>
+       <family>Source Code Pro Medium</family>
+      </font>
+     </property>
+     <property name="title">
+      <string>Add ...</string>
+     </property>
+     <addaction name="rIDE_actionNew_File"/>
+     <addaction name="rIDE_actionNew_File_ftmpt"/>
+     <addaction name="rIDE_actionNew_CMakeLists_file"/>
+     <addaction name="rIDE_actionNew_Makefile"/>
+     <addaction name="rIDE_actionNew_MD_file"/>
+     <addaction name="rIDE_actionNew_MD_file_ftmpt"/>
+    </widget>
+    <addaction name="rIDE_menuNew"/>
+    <addaction name="rIDE_menuAdd"/>
+    <addaction name="rIDE_actionOpen_Project"/>
+    <addaction name="rIDE_actionOpen_File"/>
+    <addaction name="rIDE_actionSave"/>
+    <addaction name="rIDE_actionSave_As"/>
+    <addaction name="rIDE_actionProject_Properties"/>
+    <addaction name="rIDE_actionRestart"/>
+    <addaction name="rIDE_menu_actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="rIDE_menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="rIDE_menuProject">
+    <property name="title">
+     <string>Project</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="rIDE_menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="rIDE_menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="rIDE_menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="rIDE_menu_actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="rIDE_menu_View">
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <widget class="QMenu" name="rIDE_menuSymbols_View">
+     <property name="title">
+      <string>S&amp;ymbols View</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="rIDE_symbols_view_actionOn"/>
+     <addaction name="rIDE_symbols_view_actionOff"/>
+    </widget>
+    <widget class="QMenu" name="rIDE_menuDebugger_View">
+     <property name="title">
+      <string>Deb&amp;ugger View</string>
+     </property>
+     <addaction name="rIDE_debugger_view_actionOn"/>
+     <addaction name="rIDE_debugger_view_actionOff"/>
+    </widget>
+    <widget class="QMenu" name="rIDE_menu_Line_Number">
+     <property name="title">
+      <string>Line Number</string>
+     </property>
+     <addaction name="rIDE_sub_menu_actionOn"/>
+     <addaction name="rIDE_sub_menu_actionOff"/>
+    </widget>
+    <addaction name="rIDE_menuSymbols_View"/>
+    <addaction name="rIDE_menuDebugger_View"/>
+    <addaction name="rIDE_menu_Line_Number"/>
+   </widget>
+   <addaction name="rIDE_menuFile"/>
+   <addaction name="rIDE_menuEdit"/>
+   <addaction name="rIDE_menuProject"/>
+   <addaction name="rIDE_menuTools"/>
+   <addaction name="rIDE_menu_View"/>
+   <addaction name="rIDE_menuHelp"/>
+   <addaction name="rIDE_menuAbout"/>
+  </widget>
+  <widget class="QToolBar" name="rIDE_mainToolBar">
+   <property name="font">
+    <font>
+     <family>Source Code Pro Semibold</family>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="rIDE_statusBar">
+   <property name="font">
+    <font>
+     <family>Source Code Pro Semibold</family>
+     <pointsize>8</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <action name="rIDE_menu_actionQuit">
+   <property name="text">
+    <string>&amp;Quit</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_menu_actionAbout">
+   <property name="text">
+    <string>Abou&amp;t reaktrIDE</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionC">
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionCPP">
+   <property name="text">
+    <string>C++</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionPython">
+   <property name="text">
+    <string>Python</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_mf_actionC">
+   <property name="text">
+    <string>C</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_mf_actionCPP">
+   <property name="text">
+    <string>C++</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_mf_actionPython">
+   <property name="text">
+    <string>Python</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionOpen_Project">
+   <property name="text">
+    <string>Open Project</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionOpen_File">
+   <property name="text">
+    <string>Open File</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionProject_Properties">
+   <property name="text">
+    <string>Project Properties</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionSave_As">
+   <property name="text">
+    <string>Save As ...</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_File">
+   <property name="text">
+    <string>New File</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_File_ftmpt">
+   <property name="text">
+    <string>New File from template</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionRestart">
+   <property name="text">
+    <string>Restart reaktrIDE</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_CMakeLists_file">
+   <property name="text">
+    <string>New CMakeLists.txt file</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_Makefile">
+   <property name="text">
+    <string>New Makefile</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_MD_file">
+   <property name="text">
+    <string>New Markdown file</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionNew_MD_file_ftmpt">
+   <property name="text">
+    <string>New Markdown file from template</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_actionProject_Tree_View">
+   <property name="text">
+    <string>Pro&amp;ject Tree View</string>
+   </property>
+  </action>
+  <action name="rIDE_actionFiles_on_Disk_Vie_w">
+   <property name="text">
+    <string>Files on Disk Vie&amp;w</string>
+   </property>
+  </action>
+  <action name="rIDE_symbols_view_actionOn">
+   <property name="text">
+    <string>On</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_symbols_view_actionOff">
+   <property name="text">
+    <string>Off</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_debugger_view_actionOn">
+   <property name="text">
+    <string>On</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_debugger_view_actionOff">
+   <property name="text">
+    <string>Off</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Source Code Pro Medium</family>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="rIDE_sub_menu_actionOn">
+   <property name="text">
+    <string>On</string>
+   </property>
+  </action>
+  <action name="rIDE_sub_menu_actionOff">
+   <property name="text">
+    <string>Off</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
